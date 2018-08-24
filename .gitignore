@@ -1,0 +1,11 @@
+
+/.settings
+/.buildpath
+/.project
+/nbproject
+/application/daemon/lock
+/application/daemon/log
+/application/logs
+/application/config/config.php
+/application/daemon/config/database.php
+/.idea

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="/application/views/libraries/easyUi/themes/gray/easyui.css">
+		<link rel="stylesheet" type="text/css" href="/application/views/libraries/easyUi/themes/icon.css">
+		<script type="text/javascript" src="/application/views/libraries/jQuery/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="/application/views/libraries/easyUi/jquery.easyui.min.js"></script>
+		<script type="text/javascript" src="/application/views/libraries/utils/utils.js"></script>
+		<script type="text/javascript" src="/application/views/libraries/component/component.js"></script>
+		<script type="text/javascript" src="/application/views/module/Language/language.js"></script>
+		<script type="text/javascript" src="/application/views/module/Task/task.js"></script>
+	</head>
+	
+	<body style="width:100%; height:100%; margin:0;" onload="Task.Reward.init()">
+		<div id="dataGridPanel" style="width:1px; position:relative;left:20px;top:20px; ">
+			<div id="toolbar" style="padding:5px;height:auto">
+				<div style="padding:5px;height:auto">
+					<label id="operatorIdComboboxLabel"></label>
+					<input id="operatorIdComboboxInput" autocomplete="off" />
+					&nbsp;&nbsp; &nbsp;&nbsp;
+                                        <label id="areaNumCombogridLabel"></label>
+					<input id="areaNumCombogridInput" autocomplete="off" />
+                                        &nbsp;&nbsp; &nbsp;&nbsp;
+					<label id="searchStartDateboxLabel"></label>
+					<input id="searchStartDateboxInput" autocomplete="off" />
+					&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <label id="searchEndDateboxLabel"></label>
+					<input id="searchEndDateboxInput" autocomplete="off" />
+					&nbsp;&nbsp;&nbsp;&nbsp;
+					<a id="searchButton" href="javascript:void(0)"></a>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;
+					<a id="exportButton" href="javascript:void(0)"></a>
+				</div>
+                                
+			</div>
+			
+			<table id="dataGrid" style="width: 600px;">
+			</table>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="/application/views/libraries/easyUi/themes/gray/easyui.css">
+		<link rel="stylesheet" type="text/css" href="/application/views/libraries/easyUi/themes/icon.css">
+		<script type="text/javascript" src="/application/views/libraries/jQuery/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="/application/views/libraries/easyUi/jquery.easyui.min.js"></script>
+		<script type="text/javascript" src="/application/views/libraries/utils/utils.js"></script>
+		<script type="text/javascript" src="/application/views/libraries/component/component.js"></script>
+		<script type="text/javascript" src="/application/views/module/Language/language.js"></script>
+		<script type="text/javascript" src="/application/views/module/Mail/mail.js"></script>
+	</head>
+	
+	<body style="width:100%; height:100%; margin:0;" onload="Mail.Question.init()">
+		<div id="dataGridPanel" style="width:1px; position:relative;left:20px;top:20px; ">
+			<div id="toolbar" style="padding:5px;height:auto">
+				<div  style="padding:5px;height:auto" >
+					<label  id="operatorIdComboboxLabel"></label>
+                                        <input id="operatorIdComboboxInput" autocomplete="off" />
+                                        &nbsp;&nbsp;
+                                        <label id="areaNumCombogridLabel"></label>
+                                        <input id="areaNumCombogridInput" autocomplete="off" />
+                                        &nbsp;&nbsp;
+                                        <label id="stateComboboxLabel"></label>
+					<input id="stateComboboxInput" autocomplete="off" />
+					&nbsp;&nbsp;
+                                        <label id="questionTypeComboboxLabel"></label>
+					<input id="questionTypeComboboxInput" autocomplete="off" />
+					&nbsp;&nbsp;
+					<label id="accountValidateboxLabel"></label>
+					<input id="accountValidateboxInput" autocomplete="off" />
+					&nbsp;&nbsp;
+					<label id="roleNameValidateboxLabel"></label>
+					<input id="roleNameValidateboxInput" autocomplete="off" />
+                                        &nbsp;&nbsp;
+				</div>
+                                <div style="padding:5px;height:auto">
+                                        <label id="startDatetimeboxLabel"></label>
+					<input id="startDatetimeboxInput" autocomplete="off" />
+					&nbsp;&nbsp;&nbsp;&nbsp;
+					<label id="endDatetimeboxLabel"></label>
+					<input id="endDatetimeboxInput" autocomplete="off" />
+					&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <a id="searchButton" href="javascript:void(0)"></a>
+                                        &nbsp;&nbsp;
+					<a id="rewardButton" href="javascript:void(0)"></a>
+					&nbsp;&nbsp;
+					<a id="approvalButton" href="javascript:void(0)"></a>
+					&nbsp;&nbsp;
+					<a id="delButton" href="javascript:void(0)"></a>
+                                        &nbsp;&nbsp;
+                                        <a id="exportButton"  href="javascript:void(0)"></a>
+					
+				</div>
+			</div>
+                    <table id="dataGrid" style="width: 600px;">
+                    </table>
+                     
+		</div>
+            <div id="rewardWindow" style="padding:10px 10px 10px 10px">
+			<div class="easyui-layout" data-options="fit:true">
+				
+				<div data-options="region:'south'" style="height:40px; text-align:center; padding:8px 10px 8px 10px">
+					<a id="submitButton" href="javascript:void(0)"></a>
+					&nbsp;&nbsp;&nbsp;&nbsp;
+					<a id="resetButton" href="javascript:void(0)"></a>
+				</div>
+				<div data-options="region:'center'" style="width:250px; padding:10px 10px 10px 10px">
+					<table>
+						<tr>
+							<td width="60">
+								<label id="operatorIdComboboxLabel"></label>
+							</td>
+							<td width="120">
+								<input id="operatorIdComboboxInput" autocomplete="off" />
+							</td>
+						</tr>
+						<tr>
+							<td width="60">
+								<label id="areaNumCombogridLabel"></label>
+							</td>
+							<td width="120">
+								<input id="areaNumCombogridInput" autocomplete="off" />
+							</td>
+						</tr>
+                                                <tr>
+							<td>
+								<label id="senderNameValidateboxLabel"></label>
+							</td>
+							<td>
+								<input id="senderNameValidateboxInput" autocomplete="off" />
+							</td>
+						</tr>
+                                                <tr>
+							<td width="60">
+								<label id="rewardComboboxLabel"></label>
+							</td>
+							<td width="120">
+								<input id="rewardComboboxInput" autocomplete="off" />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label id="titleValidateboxLabel"></label>
+							</td>
+							<td>
+								<input id="titleValidateboxInput" autocomplete="off" />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label id="contentTextboxLabel"></label>
+							</td>
+							<td>
+								<textarea id="contentTextboxInput" cols="15" rows="6" ></textarea>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label id="sendDatetimeboxLabel"></label>
+							</td>
+							<td>
+								<input id="sendDatetimeboxInput" autocomplete="off" />
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+
+	</body>
+</html>

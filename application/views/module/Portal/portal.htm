@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Gm Tool</title>
+		<link rel="stylesheet" type="text/css" href="/application/views/libraries/easyUi/themes/gray/easyui.css">
+		<link rel="stylesheet" type="text/css" href="/application/views/libraries/easyUi/themes/icon.css">
+		<script type="text/javascript" src="/application/views/libraries/jQuery/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="/application/views/libraries/easyUi/jquery.easyui.min.js"></script>
+		<script type="text/javascript" src="/application/views/libraries/utils/utils.js"></script>
+		<script type="text/javascript" src="/application/views/libraries/component/component.js"></script>
+		<script type="text/javascript" src="/application/views/module/Language/language.js"></script>
+		<script type="text/javascript" src="/application/views/module/Portal/portal.js"></script>
+	</head>
+	<body class="easyui-layout" onload="Portal.init()">
+		<div id="northPanel" data-options="region:'north'" style="height:40px">
+			<table style="width:100%; height:100%">
+				<tr>
+                                        <td style="width:10%">
+                                            <img src="/application/views/libraries/easyUi/themes/logo.png"/>
+                                        </td>
+					<td id="userInfo" style="width:40%">
+					</td>
+					<td style="width:50%" align="right">
+						<label id="languageComboboxLabel"></label>
+						<input id="languageComboboxInput" name="language" />
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div id="westPanel" data-options="region:'west',split:true" style="width:200px;padding-top: 10px;">
+                        <ul id="menuPanel">
+                        </ul>
+		</div>
+		<div id="centerPanel" data-options="region:'center'" style="overflow-y:visible">
+			<div id="tabPanel">
+			</div>
+		</div>
+		
+		<div id="loginWindow" style="padding:10px 10px 10px 10px">
+			<table>
+				<tr>
+					<td width="80px">
+						<label id="usernameValidateboxLabel"></label>
+					</td>
+					<td width="120px">
+						<input id="usernameValidateboxInput" autocomplete="off" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label id="passwordValidateboxLabel"></label>
+					</td>
+					<td>
+						<input id="passwordValidateboxInput" type="password" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label id="languageComboboxLabel"></label>
+					</td>
+					<td>
+						<input id="languageComboboxInput" name="language" />
+					</td>
+				</tr>
+				<tr height="10px">
+				</tr>
+				<tr>
+					<td colspan="2" align="center">
+						<a id="submitButton" href="javascript:void(0)"></a>
+						&nbsp;&nbsp;&nbsp;&nbsp;
+						<a id="resetButton" href="javascript:void(0)"></a>
+					</td>
+				</tr>
+			</table>
+		</div>
+		
+		<div id="modifyPasswordWindow" style="padding: 10px 10px 10px 10px">
+			<table>
+				<tr>
+					<td width="80px">
+						<label id="passwordValidateboxLabel"></label>
+					</td>
+					<td width="120px">
+						<input id="passwordValidateboxInput" type="password" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label id="newPasswordValidateboxLabel"></label>
+					</td>
+					<td>
+						<input id="newPasswordValidateboxInput" type="password" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label id="confirmPasswordValidateboxLabel"></label>
+					</td>
+					<td>
+						<input id="confirmPasswordValidateboxInput" type="password" />
+					</td>
+				</tr>
+				<tr height="10px">
+				</tr>
+				<tr>
+					<td colspan="2" align="center">
+						<a id="submitButton" href="javascript:void(0)"></a>
+						&nbsp;&nbsp;&nbsp;&nbsp;
+						<a id="resetButton" href="javascript:void(0)"></a>
+					</td>
+				</tr>
+			</table>
+		</div>
+                <div id="lockSelectWindow" style="padding: 10px 10px 10px 10px">
+			<table>
+				<tr>
+					<td width="80px">
+						<label id="operatorIdComboboxLabel"></label>
+					</td>
+					<td width="120px">
+						<input id="operatorIdComboboxInput" type="password" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label id="areaNumCombogridLabel"></label>
+					</td>
+					<td>
+						<input id="areaNumCombogridInput" type="password" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label id="startDateboxLabel"></label>
+					</td>
+					<td>
+						<input id="startDateboxInput" type="password" />
+					</td>
+				</tr>
+                                <tr>
+					<td>
+						<label id="endDateboxLabel"></label>
+					</td>
+					<td>
+						<input id="endDateboxInput" type="password" />
+					</td>
+				</tr>
+				<tr height="10px">
+				</tr>
+				<tr>
+					<td colspan="2" align="center">
+						<a id="submitButton" href="javascript:void(0)"></a>
+						&nbsp;&nbsp;&nbsp;&nbsp;
+						<a id="resetButton" href="javascript:void(0)"></a>
+					</td>
+				</tr>
+			</table>
+		</div>
+    </body>
+</html>

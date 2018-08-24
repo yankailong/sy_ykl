@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="/application/views/libraries/easyUi/themes/gray/easyui.css">
+		<link rel="stylesheet" type="text/css" href="/application/views/libraries/easyUi/themes/icon.css">
+		<script type="text/javascript" src="/application/views/libraries/jQuery/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="/application/views/libraries/easyUi/jquery.easyui.min.js"></script>
+                <script type="text/javascript" src="/application/views/libraries/jqPlot/jquery.jqplot.js"></script>
+		<script type="text/javascript" src="/application/views/libraries/jqPlot/plugins/jqplot.dateAxisRenderer.js"></script>
+		<script type="text/javascript" src="/application/views/libraries/jqPlot/plugins/jqplot.highlighter.js"></script>
+		<script type="text/javascript" src="/application/views/libraries/jqPlot/plugins/jqplot.pieRenderer.js"></script>
+		<script type="text/javascript" src="/application/views/libraries/jqPlot/plugins/jqplot.donutRenderer.js"></script>
+		<script type="text/javascript" src="/application/views/libraries/utils/utils.js"></script>
+		<script type="text/javascript" src="/application/views/libraries/component/component.js"></script>
+		<script type="text/javascript" src="/application/views/module/Language/language.js"></script>
+		<script type="text/javascript" src="/application/views/module/Online/online.js"></script>
+	</head>
+	
+	<body style="width:100%; height:100%; margin:0;" onload="Online.AllPay.init()">
+		<div id="dataGridPanel" style="width:1px; position:relative;left:20px;top:20px; ">
+			<div id="toolbar" style="padding:5px;height:auto">
+				<div style="padding:5px;height:auto">
+					<label id="startDateboxLabel"></label>
+					<input id="startDateboxInput" autocomplete="off" />
+					&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <label id="endDateboxLabel"></label>
+					<input id="endDateboxInput" autocomplete="off" />
+					&nbsp;&nbsp;&nbsp;&nbsp;
+					<a id="searchButton" href="javascript:void(0)"></a>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;
+					<a id="exportButton" href="javascript:void(0)"></a>
+				</div>
+			</div>
+			
+			<table id="dataGrid" style="width: 600px;">
+			</table>
+		</div>
+	</body>
+	<script>
+		/*private function LiuDaoLunHui():void{
+		     Alert.show('Hi As');
+		}*/
+		// External.addCallback('jsSayHi', LiuDaoLunHui);
+		
+		/*window.onload=function (){
+		     document.getElementById('flashId').LiuDaoLunHui();
+		}*/
+
+		window.onbeforeunload = function() {
+
+	       	var n = window.event.screenX - window.screenLeft;
+
+	       	var b = n > document.documentElement.scrollWidth - 20;
+
+	       	if (!(b && window.event.clientY < 0 || window.event.altKey)) {
+	           window.event.returnValue = "真的要刷新页面么？";
+
+	            //这里放置我想执行缓存的代码
+	            // cacheFunction();
+	            var s = jsSayHi.jsbeforeunload();
+				e = e || window.event;
+				if (e)
+				{
+					e.returnValue = s;
+				}
+				return s;
+
+		    }
+		}
+
+	</script>
+</html>

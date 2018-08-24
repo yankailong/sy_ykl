@@ -1,0 +1,10 @@
+<?php
+$gmDatabaseHost = '127.0.0.1';
+$gmDatabaseUsername = 'root';
+$gmDatabasePassword = '';
+$gmDatabaseName = 'styx_gm_tool';
+$gmDatabasePort= '3306';
+
+$gameDatabaseUsername = 'wj';
+$gameDatabasePassword = 'pptWJ8#8';
+$gameDatabasePort = '51888';
